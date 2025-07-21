@@ -5,8 +5,7 @@ let data = [
     content: '새콤달콤 맛있는 사과',
     price: 12000
   },
-
-{
+  {
     id: 1,
     title: 'strawberry',
     content: '달콤한 딸기',
@@ -17,7 +16,7 @@ let data = [
     title: 'watermelon',
     content: '시원한 수박',
     price: 35000
-  },
+  }
 ]
 
 export default data;
