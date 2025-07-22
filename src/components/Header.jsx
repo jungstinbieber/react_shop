@@ -38,7 +38,7 @@ function Header() {
           <Nav.Link onClick = {()=> navigate('/cart')}>장바구니</Nav.Link>
           <Nav.Link href="#features">Features</Nav.Link>
           <Nav.Link href="/test">테스트</Nav.Link>
-          <Link to="/test">테스트2</Link>
+          
         </Nav>
         <Nav style={{color: 'white'}}>
           {userInfoQuery.isLoading && '회원정보불러오는중'}
