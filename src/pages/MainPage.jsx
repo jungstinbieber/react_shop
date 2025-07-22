@@ -5,7 +5,7 @@ import { useState } from "react";
 function MainPage({ fruit }) {
   const [fruitCount,setFruitCount]= useState(3);
 
-  const visibleFruit = fruit.slice(0, fruitCount)
+  const visibleFruit = fruit.slice(0, fruitCount);
 
   return (
     <>
@@ -14,7 +14,7 @@ function MainPage({ fruit }) {
       <div className="container">
         <div className="row">
           {
-            fruit.map((data, i) => {
+            visibleFruit.map((data, i) => {
               return (
                 <Card data={data} key={i} />
               )
@@ -28,7 +28,7 @@ function MainPage({ fruit }) {
         :
       
 
-      <button onCanPlay={()=>{
+      <button onClick={()=>{
         setFruitCount(fruitCount+3)
       }}>3 개 더보기</button>
       }
